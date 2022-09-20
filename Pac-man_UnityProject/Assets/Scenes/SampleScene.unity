@@ -1289,7 +1289,7 @@ GameObject:
   - component: {fileID: 340700534}
   m_Layer: 0
   m_Name: Pinky
-  m_TagString: Untagged
+  m_TagString: Ghost
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1757,7 +1757,7 @@ GameObject:
   - component: {fileID: 524012103}
   m_Layer: 0
   m_Name: Inky
-  m_TagString: Untagged
+  m_TagString: Ghost
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2774,7 +2774,7 @@ GameObject:
   - component: {fileID: 674325598}
   m_Layer: 0
   m_Name: Blinky
-  m_TagString: Untagged
+  m_TagString: Ghost
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4231,7 +4231,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 956594186}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.68, y: 0.21, z: -7.8}
+  m_LocalPosition: {x: -11.84, y: 0.21, z: -7.8}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
@@ -6366,13 +6366,13 @@ MonoBehaviour:
   scoreText: {fileID: 1140969770}
   bonusItemSpawn: {fileID: 575869450}
   ghostSpawnBounds:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 0, y: 0, z: 0}
+    m_Center: {x: -2.46, y: 1.08, z: 1.88}
+    m_Extent: {x: 2.13, y: 0.98, z: 0.74}
   endPanel: {fileID: 94916418}
   pelletClip: {fileID: 8300000, guid: 8b967842d55728a439175e719ffa2b49, type: 3}
-  powerPelletClip: {fileID: 0}
-  bonusItemClip: {fileID: 0}
-  eatGhostClip: {fileID: 0}
+  powerPelletClip: {fileID: 8300000, guid: be5cc6f254fe1b74c8532afc632f6483, type: 3}
+  bonusItemClip: {fileID: 8300000, guid: 412beebd0b64f0841886c41c5eba2c4d, type: 3}
+  eatGhostClip: {fileID: 8300000, guid: 01db304fd126027458d2e64e65edb3eb, type: 3}
 --- !u!4 &1411977321
 Transform:
   m_ObjectHideFlags: 0
@@ -9523,7 +9523,7 @@ GameObject:
   - component: {fileID: 2120127184}
   m_Layer: 0
   m_Name: Clyde
-  m_TagString: Untagged
+  m_TagString: Ghost
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -8,6 +8,7 @@ TagManager:
   - Power Pellet
   - Pallet
   - Pellet
+  - Ghost
   layers:
   - Default
   - TransparentFX
