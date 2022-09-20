@@ -164,6 +164,7 @@ public class GameManager : MonoBehaviour
         if (type != 2)
         {
             collectedPellets++;
+           
             //Check ratio of collected pellets
             float ratio = (float)collectedPellets / totalPellets;
             if (ratio != 1)
@@ -209,6 +210,7 @@ public class GameManager : MonoBehaviour
     /// <param name="ghost"></param>
     public void EatGhost(Ghost ghost)
     {
+        Debug.Log("asdfgas");
         //Add score
         score += 5;
         //Set score text value

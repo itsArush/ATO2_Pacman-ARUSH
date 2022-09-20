@@ -136,9 +136,11 @@ public class Pacman : MonoBehaviour
     /// <param name="other"></param>
     private void OnTriggerEnter(Collider other)
     {
+        Debug.Log("Collided with " + other.tag);
         //Detect collisions
         switch (other.tag)
         {
+            
             case "Pellet":
                 GameManager.Instance.PickUpPellet(1);
                 other.gameObject.SetActive(false);
@@ -152,8 +154,10 @@ public class Pacman : MonoBehaviour
                 other.gameObject.SetActive(false);
                 break;
             case "Ghost":
+                
                 if (GameManager.Instance.PowerUpTimer > -1)
                 {
+                    
                     other.TryGetComponent(out Ghost ghost);
                     if (ghost.CurrentState != ghost.RespawnState)
                     {
