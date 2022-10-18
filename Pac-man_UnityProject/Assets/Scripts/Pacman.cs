@@ -102,7 +102,7 @@ public class Pacman : MonoBehaviour
 
         //Read inputs
         input.x = Input.GetAxis("Horizontal");
-        input.y = Input.GetAxisRaw("Vertical");
+        input.y = Input.GetAxis("Vertical");
         Vector3 motion = Vector3.zero;
         //Left/right movement
         if (input.x > 0)
@@ -136,11 +136,9 @@ public class Pacman : MonoBehaviour
     /// <param name="other"></param>
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Collided with " + other.tag);
         //Detect collisions
         switch (other.tag)
         {
-            
             case "Pellet":
                 GameManager.Instance.PickUpPellet(1);
                 other.gameObject.SetActive(false);
@@ -154,10 +152,8 @@ public class Pacman : MonoBehaviour
                 other.gameObject.SetActive(false);
                 break;
             case "Ghost":
-                
                 if (GameManager.Instance.PowerUpTimer > -1)
                 {
-                    
                     other.TryGetComponent(out Ghost ghost);
                     if (ghost.CurrentState != ghost.RespawnState)
                     {
