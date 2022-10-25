@@ -64,6 +64,10 @@
     <Compile Include="Assets\Scripts\AI\Ghost.cs" />
     <Compile Include="Assets\Scripts\AI\Inky.cs" />
     <Compile Include="Assets\TargetTracker.cs" />
+    <Compile Include="Assets\TeKniKo_Free\Power_Ups\Scripts\ObjectBounce.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\DavePixel\ReadMe!.rtf.txt" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
